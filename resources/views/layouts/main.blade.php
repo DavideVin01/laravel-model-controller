@@ -14,10 +14,10 @@
 
 <body>
     <ul class="nav d-flex">
-        <li class="nav-item me-5">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('home') }}">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ms-5">
             <a class="nav-link" href="{{ route('movies') }}">Movies</a>
         </li>
     </ul>
