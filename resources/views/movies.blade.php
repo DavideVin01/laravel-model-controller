@@ -17,11 +17,6 @@
                     <div>Voto: {{ $m['vote'] }}</div>
                 </li>
             </ul>
-
-
-
-
-
         @empty
             <h3>Non ci sono libri da mostrare</h3>
         </section>
