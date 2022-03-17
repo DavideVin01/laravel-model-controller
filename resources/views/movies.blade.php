@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+@section('title', 'Movies')
 
-<body>
-    <h1>Movies</h1>
-</body>
+@section('section-title', 'Movies')
 
-</html>
+@section('main')
+    <h1>MOVIES</h1>
+    <section class="card">
+        @forelse ($movies as $m)
+            <h3>Titolo: {{ $m['title'] }}</h3>
+            <div>Titolo originale: {{ $m['original_title'] }}</div>
+            <div>Lingua: {{ $m['nationality'] }}</div>
+            <div>Data di pubblicazione: {{ $m['date'] }}</div>
+            <div>Voto: {{ $m['vote'] }}</div>
+        @empty
+            <h3>Non ci sono libri da mostrare</h3>
+        @endforelse
+    </section>
+@endsection

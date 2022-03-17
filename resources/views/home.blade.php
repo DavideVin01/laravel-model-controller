@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movies DB</title>
-</head>
+@section('title', 'Home')
 
-<body>
-    <h1>Benvenuto sul sito di <strong>MOVIES DB</strong></h1>
-</body>
-
-</html>
+@section('main')
+    <h1>HOME</h1>
+    <h2>Benvenuti su Movies DB!</h2>
+@endsection
